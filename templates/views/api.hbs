@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node & Express Js hbs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    {{>navabar}}
+    <br />
+    <section class="container p-2">
+        <center>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control col-md-8" id="myinput" onkeyup="searchFun()" type="search" placeholder="Search  Your Data .." aria-label="Search">
+                {{!-- <button class="btn btn-md btn-primary ml-2 my-sm-0" onclick="searchFun()" type="button">Search</button> --}}
+            </form>
+        </center>
+        <br />
+        <table class="table table-bordered  " style="overflow-x:auto;" id="mytable">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Eye-color</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+            </tbody>
+        </table>
+    </section>
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="js/api.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+</body>
